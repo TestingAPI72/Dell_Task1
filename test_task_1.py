@@ -88,6 +88,7 @@ class test_task1(unittest.TestCase):
         _message.Body = body_pattern
         _message.Save()
         _message.Send()
+        print("email sent successfully")
 
     def tearDown(self) -> None:
         self.driver.quit()
