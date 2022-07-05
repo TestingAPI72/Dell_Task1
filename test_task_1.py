@@ -12,6 +12,7 @@ import unittest
 class test_task1(unittest.TestCase):
 
     def setUp(self) -> None:
+        print("Demo")
         working_directory = os.getcwd()
         _chrome_driver_path = working_directory + "//" + "chromedriver.exe"
         self.server = None
