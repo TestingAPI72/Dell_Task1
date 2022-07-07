@@ -15,8 +15,8 @@ class test_task1(unittest.TestCase):
         working_directory = os.getcwd()
         _chrome_driver_path = working_directory + "//" + "chromedriver.exe"
         self.server = None
-        self.email = str(os.getenv('City'))
-        self.place = str(os.getenv('Email'))
+        self.email = str(os.getenv('Email'))
+        self.place = str(os.getenv('City'))
         self.chromeOptions = webdriver.ChromeOptions()
         self.chromeOptions.add_argument("--ignore-certificate-error")
         self.chromeOptions.add_argument("--ignore-ssl-errors")
